@@ -1,0 +1,30 @@
+{
+  "name": "gordon-toggle-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "npm-run-all": "^4.1.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-transition-group": "1.x",
+    "reactstrap": "^5.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "less-watch-compiler": "^1.11.0",
+    "prop-types": "^15.6.0",
+    "react-scripts": "1.1.0"
+  },
+  "scripts": {
+    "build-css": "less-watch-compiler --include-path ./src --include-path --run-once --main-file=index.less src/ src/",
+    "watch-css": "npm run build-css && less-watch-compiler --include-path --include-path --main-file=index.less src/ src/",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

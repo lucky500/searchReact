@@ -1,0 +1,41 @@
+html, body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  .outer-wrapper {
+    min-height: 100%;
+  }
+}
+
+.outer-wrapper {
+  main {
+    background-color: @bg_gray;
+    
+    .container {
+      background-color: #fff;
+      min-width: 96%;
+      min-height: 100vh;
+    }
+  }
+
+}
+
+/*===== Variables ======*/
+@white: white;
+@main_blue: #58ADD2;
+@main_gray: #E6E6E6;
+@bg_gray: #E6E6E6;
+
+
+/*====== Mixins =======*/
+@mobile: ~"only screen and (max-width: 529px)";
+
+
+
+
+
+
+
+
