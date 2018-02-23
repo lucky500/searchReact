@@ -21,7 +21,7 @@ export default props => {
       <Row className="mt-3">
         {
           list.map(item => {
-            return <Product {...item} key={item.id} />
+            return <Product {...item} key={item._id} />
           })
         }
       </Row>

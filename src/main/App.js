@@ -8,7 +8,6 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import ProductList from '../components/Product/ProductList';
 
 
-//const URL  = 'http://localhost:8091/search-service/v1/';
 const URL  = 'http://localhost:3035/api/products';
 
 class App extends Component {
@@ -22,7 +21,6 @@ class App extends Component {
       gordonFilterResults: [],
       hideResultsBar: true,
       hideFilterResults: true,
-      clientName: 'Kohls'
     }  
   }
 
@@ -49,7 +47,6 @@ class App extends Component {
 
 
   fetchProducts = (searchedTerm = '', clientName) => {
-    // const search = searchedTerm ? `search?q=${searchedTerm}&num=50&gordon=${this.state.toggleOn}&clientId=${clientName}` : '';
     const search = searchedTerm ? `?&title__regex=/${searchedTerm}/&gordonToggle=${this.state.toggleOn}` : '';
 
     axios.get(`${URL}${search}`)

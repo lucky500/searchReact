@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
   return (
   <Col xs={6} md={3} lg={3} xl={2}>
     <div className="product-card card">
-      <img className="card-img-top" src={props.imageUrl} alt="Product" />
+      <img className="card-img-top" src={props.image} alt="Product" />
       <div className="card-block">
         <div className="card-title pt-2">{props.title}</div>
       </div>
@@ -18,6 +18,6 @@ import PropTypes from 'prop-types';
 export default Product;
 
 Product.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   title:    PropTypes.string.isRequired 
 }
