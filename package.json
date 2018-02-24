@@ -2,10 +2,12 @@
   "name": "gordon-toggle-app",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.17.1",
     "bootstrap": "^4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
+    "http-server": "^0.11.1",
     "npm-run-all": "^4.1.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
