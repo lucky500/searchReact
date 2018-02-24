@@ -8,7 +8,7 @@ import SearchBar from '../components/SearchBar/SearchBar';
 import ProductList from '../components/Product/ProductList';
 
 
-const URL  = 'https://search-app-backend.herokuapp.com/api';
+const URL  = 'https://search-app-backend.herokuapp.com/api/products';
 
 class App extends Component {
 
